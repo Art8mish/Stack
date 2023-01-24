@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="pop_push_functions.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="181" topLine="0" />
+		<BrowseMarks positions="757,832,2131,2291,2370,2405,2443,2604,2757,2775,2843,2924,3031,3162,3238,3273,3405,3485,3559,3625" />
+		<Book_Marks positions="1888,2885" />
+	</File>
+	<File name="config.h" open="0" top="0" tabpos="5">
+		<Cursor position="104" topLine="0" />
+		<BrowseMarks positions="56,77,163,188,219" />
+	</File>
+	<File name="log_file.txt" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="poison_functions.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="28" topLine="0" />
+		<BrowseMarks positions="149,523,650,687" />
+	</File>
+	<File name="construct_functions.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="281" topLine="0" />
+		<BrowseMarks positions="725,811,873,935,974,1210,1236,1315,1386,1428,1439,1578,1734,1784,1810,1844,2021,2208,2433,2542" />
+		<Book_Marks positions="199,3132,1049,1736,1257,1431" />
+	</File>
+	<File name="libraries.h" open="1" top="0" tabpos="1">
+		<Cursor position="1646" topLine="33" />
+		<BrowseMarks positions="150,300,600,770,936,1023,1108,1533,1646,2294,2296,3600,4962" />
+		<Book_Marks positions="2234,2174,3294,3314,3595" />
+	</File>
+	<File name="verification_functions.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="4335" topLine="113" />
+		<BrowseMarks positions="187,2472,2945,3219,3221,3507,3553,8025,9678" />
+		<Book_Marks positions="421,762,2393,6574,6475,1259,7454,273,7180,6671,6877,8283" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="446" topLine="0" />
+		<BrowseMarks positions="26,28,46,49,347,506,530" />
+	</File>
+	<File name="stack_functions.h" open="0" top="0" tabpos="4">
+		<Cursor position="1648" topLine="0" />
+		<BrowseMarks positions="2177" />
+	</File>
+</BrowseTracker_layout_file>

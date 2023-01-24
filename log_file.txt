@@ -1,0 +1,169 @@
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(17)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 2
+    capacity = 2
+    data[015AC9DC]
+     {
+        *[0] = 0
+        *[1] = 1
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(23)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 0
+    capacity = 2
+    data[015AC9DC]
+     {
+         [0] = 666 (POISON)
+         [1] = 666 (POISON)
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(27)
+Stack[00A8FEB0] (ERROR) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status = DEAD  (0)
+}
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(17)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 2
+    capacity = 2
+    data[0158C85C]
+     {
+        *[0] = 0
+        *[1] = 1
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(23)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 0
+    capacity = 2
+    data[0158C85C]
+     {
+         [0] = 666 (POISON)
+         [1] = 666 (POISON)
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(27)
+Stack[00A8FEB0] (ERROR) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status = DEAD  (0)
+}
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(17)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 2
+    capacity = 2
+    data[0143C874]
+     {
+        *[0] = 0
+        *[1] = 1
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(23)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 0
+    capacity = 2
+    data[0143C874]
+     {
+         [0] = 666 (POISON)
+         [1] = 666 (POISON)
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(27)
+Stack[00A8FEB0] (ERROR) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status = DEAD  (0)
+}
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(17)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 2
+    capacity = 2
+    data[0159C88C]
+     {
+        *[0] = 0
+        *[1] = 1
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(23)
+Stack[00A8FEB0] (ok) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status   = ALIVE (1)
+    left_stk_canary  = DEADBEEF (ALIVE)
+    right_stk_canary  = DEADBEEF (ALIVE)
+    left_data_canary   = -1412571974 (ALIVE)
+    right_data_canary  = -1412571974 (ALIVE)
+    size     = 0
+    capacity = 2
+    data[0159C88C]
+     {
+         [0] = 666 (POISON)
+         [1] = 666 (POISON)
+     }
+}
+
+
+main at C:\Program Files\CodeBlocks\CBProjects\Stack\main.cpp(27)
+Stack[00A8FEB0] (ERROR) "stk1" at DON'T KNOW at DON'T KNOW (11)
+{
+    status = DEAD  (0)
+}
+

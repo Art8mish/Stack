@@ -1,0 +1,1870 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00482E17 в функции StackDumpFunction() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 42. Попытка прочесть данные по адресу 0x0000000D в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x1CF0 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482E17 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackDumpFunction() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (42):
+
+     40:     for (int index = 0; index < (*stk).capacity; index++)
+     41:     {
+=>   42:         if (*((*stk).data))
+     43:             printf("        *[%d] = %d\n", index, *((*stk).data + index));  //должна быть совместимость по формату (нужен свой Print)
+     44:         else
+
+# 1 0x00457431 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13:     StackDtor(&stk1);
+     14: 
+=>   15:     StackDump(&stk1);
+     16: }
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 26 2022 21:48:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 26 2022 22:09:25
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00482E17 в функции StackDumpFunction() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 42. Попытка прочесть данные по адресу 0x0000000D в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x1CF0 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482E17 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackDumpFunction() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (42):
+
+     40:     for (int index = 0; index < (*stk).capacity; index++)
+     41:     {
+=>   42:         if (*((*stk).data))
+     43:             printf("        *[%d] = %d\n", index, *((*stk).data + index));  //должна быть совместимость по формату (нужен свой Print)
+     44:         else
+
+# 1 0x00457431 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13:     StackDtor(&stk1);
+     14: 
+=>   15:     StackDump(&stk1);
+     16: }
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 26 2022 21:48:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 26 2022 22:09:25
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C9D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0xDEADBEEF в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x2990 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C9D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C9685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0045742E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13:     //StackDump(&stk1);
+     14: 
+=>   15:     PrintArg(stk1);
+     16: 
+     17:     for (Elem_t i = 0; i < 5; i++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 28 2022 19:49:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 28 2022 19:49:51
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C9D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0xDEADBEEF в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x2990 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C9D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C9685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0045742E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13:     //StackDump(&stk1);
+     14: 
+=>   15:     PrintArg(stk1);
+     16: 
+     17:     for (Elem_t i = 0; i < 5; i++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 28 2022 19:49:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 28 2022 19:49:51
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C9D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0xDEADBEEF в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x10F8 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C9D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C9685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0045742E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13:     //StackDump(&stk1);
+     14: 
+=>   15:     PrintArg(stk1);
+     16: 
+     17:     for (Elem_t i = 0; i < 5; i++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 28 2022 19:52:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 28 2022 19:52:37
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C9D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0xDEADBEEF в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x10F8 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C9D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C9685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0045742E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13:     //StackDump(&stk1);
+     14: 
+=>   15:     PrintArg(stk1);
+     16: 
+     17:     for (Elem_t i = 0; i < 5; i++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 28 2022 19:52:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 28 2022 19:52:37
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA678 в функции StackDumpFunction() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 86. Попытка прочесть данные по адресу 0x00000009 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x2728 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA678 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackDumpFunction() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (86):
+
+     84:     {
+     85:         printf("    left_data_canary  = ");
+=>   86:         printf(ELEM_T_SPECIFIER, *((*stk).data - 1));
+     87:         printf(" (ALIVE)\n");
+     88:     }
+
+# 1 0x004574F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (26):
+
+     24:     StackDtor(&stk1);
+     25: 
+=>   26:     StackDump(&stk1);
+     27: 
+     28:     while(true);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 29 2022 21:55:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 29 2022 21:55:34
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA678 в функции StackDumpFunction() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 86. Попытка прочесть данные по адресу 0x00000009 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x2728 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA678 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackDumpFunction() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (86):
+
+     84:     {
+     85:         printf("    left_data_canary  = ");
+=>   86:         printf(ELEM_T_SPECIFIER, *((*stk).data - 1));
+     87:         printf(" (ALIVE)\n");
+     88:     }
+
+# 1 0x004574F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (26):
+
+     24:     StackDtor(&stk1);
+     25: 
+=>   26:     StackDump(&stk1);
+     27: 
+     28:     while(true);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 29 2022 21:55:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 29 2022 21:55:34
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DABF2 в функции DataHashCounter() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 244. Попытка прочесть данные по адресу 0x00000009 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x414 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DABF2 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: DataHashCounter() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (244):
+
+    242:     {
+    243:         hash_value *= 33;
+=>  244:         hash_value += *data_byte;
+    245:         data_byte++;
+    246:     }
+
+# 1 0x004DA403 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (14):
+
+     12: 
+     13:     unsigned long stack_hash_value = StackHashCounter(stk, 0);
+=>   14:     unsigned long  data_hash_value =  DataHashCounter(stk, 0);
+     15: 
+     16: 
+
+# 2 0x004AE73D in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).err_code)
+
+# 3 0x004574FA in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (27):
+
+     25: 
+     26:     for (int index = 0; index < 15; index++)
+=>   27:         StackPush(&stk1, index);
+     28: 
+     29:     StackDump(&stk1, "stk1");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 13:47:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 13:49:38
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DABF2 в функции DataHashCounter() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 244. Попытка прочесть данные по адресу 0x00000009 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x414 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DABF2 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: DataHashCounter() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (244):
+
+    242:     {
+    243:         hash_value *= 33;
+=>  244:         hash_value += *data_byte;
+    245:         data_byte++;
+    246:     }
+
+# 1 0x004DA403 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (14):
+
+     12: 
+     13:     unsigned long stack_hash_value = StackHashCounter(stk, 0);
+=>   14:     unsigned long  data_hash_value =  DataHashCounter(stk, 0);
+     15: 
+     16: 
+
+# 2 0x004AE73D in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).err_code)
+
+# 3 0x004574FA in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (27):
+
+     25: 
+     26:     for (int index = 0; index < 15; index++)
+=>   27:         StackPush(&stk1, index);
+     28: 
+     29:     StackDump(&stk1, "stk1");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 13:47:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 13:49:38
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AEA83 в функции StackRealloc() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 131. Попытка записать данные по адресу 0x0000000D в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x4560 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AEA83 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackRealloc() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (131):
+
+    129:     else
+    130:     {
+=>  131:         *((*stk).data + capacity + 1) = POISON_VALUE;
+    132:           (*stk).data = (Elem_t*) realloc((*stk).data, ((*stk).capacity + 2) * sizeof(Elem_t));
+    133:         *((*stk).data + (*stk).capacity + 1) = RIGHT_DATA_CANARY_CONST;
+
+# 1 0x004AE77B in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (29):
+
+     27: 
+     28:     if ((*stk).data_size >= (*stk).capacity)
+=>   29:         StackRealloc(stk);
+     30: 
+     31:     *((*stk).data + (*stk).data_size) = value;
+
+# 2 0x004574FA in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (27):
+
+     25: 
+     26:     for (int index = 0; index < 15; index++)
+=>   27:         StackPush(&stk1, index);
+     28: 
+     29:     StackDump(&stk1, "stk1");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 13:51:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 13:51:20
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AEA83 в функции StackRealloc() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 131. Попытка записать данные по адресу 0x0000000D в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x4560 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AEA83 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackRealloc() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (131):
+
+    129:     else
+    130:     {
+=>  131:         *((*stk).data + capacity + 1) = POISON_VALUE;
+    132:           (*stk).data = (Elem_t*) realloc((*stk).data, ((*stk).capacity + 2) * sizeof(Elem_t));
+    133:         *((*stk).data + (*stk).capacity + 1) = RIGHT_DATA_CANARY_CONST;
+
+# 1 0x004AE77B in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (29):
+
+     27: 
+     28:     if ((*stk).data_size >= (*stk).capacity)
+=>   29:         StackRealloc(stk);
+     30: 
+     31:     *((*stk).data + (*stk).data_size) = value;
+
+# 2 0x004574FA in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (27):
+
+     25: 
+     26:     for (int index = 0; index < 15; index++)
+=>   27:         StackPush(&stk1, index);
+     28: 
+     29:     StackDump(&stk1, "stk1");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 13:51:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 13:51:20
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AEADB в функции StackRealloc() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 148. Попытка записать данные по адресу 0x0000000D в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x5F4 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AEADB in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackRealloc() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (148):
+
+    146:     else
+    147:     {
+=>  148:         *((*stk).data + capacity + 1) = POISON_VALUE;
+    149:           (*stk).data = (Elem_t*) realloc((*stk).data, ((*stk).capacity + 2) * sizeof(Elem_t));
+    150:         *((*stk).data + (*stk).capacity + 1) = RIGHT_DATA_CANARY_CONST;
+
+# 1 0x004AE7A7 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (37):
+
+     35: 
+     36:     if ((*stk).data_size >= (*stk).capacity)
+=>   37:         StackRealloc(stk);
+     38: 
+     39:     *((*stk).data + (*stk).data_size) = value;
+
+# 2 0x004574FA in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (27):
+
+     25: 
+     26:     for (int index = 0; index < 15; index++)
+=>   27:         StackPush(&stk1, index);
+     28: 
+     29:     StackDump(&stk1, "stk1");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 13:56:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 13:56:31
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AEADB в функции StackRealloc() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 148. Попытка записать данные по адресу 0x0000000D в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x5F4 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AEADB in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackRealloc() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (148):
+
+    146:     else
+    147:     {
+=>  148:         *((*stk).data + capacity + 1) = POISON_VALUE;
+    149:           (*stk).data = (Elem_t*) realloc((*stk).data, ((*stk).capacity + 2) * sizeof(Elem_t));
+    150:         *((*stk).data + (*stk).capacity + 1) = RIGHT_DATA_CANARY_CONST;
+
+# 1 0x004AE7A7 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (37):
+
+     35: 
+     36:     if ((*stk).data_size >= (*stk).capacity)
+=>   37:         StackRealloc(stk);
+     38: 
+     39:     *((*stk).data + (*stk).data_size) = value;
+
+# 2 0x004574FA in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (27):
+
+     25: 
+     26:     for (int index = 0; index < 15; index++)
+=>   27:         StackPush(&stk1, index);
+     28: 
+     29:     StackDump(&stk1, "stk1");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 13:56:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 13:56:31
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DAC64 в функции DataHashCounter() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 261. Попытка прочесть данные по адресу 0x0000014F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x1360 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DAC64 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: DataHashCounter() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (261):
+
+    259:     {
+    260:         hash_value *= 33;
+=>  261:         hash_value += *data_byte;
+    262:         data_byte++;
+    263:     }
+
+# 1 0x004DA40F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (17):
+
+     15: 
+     16:     unsigned long stack_hash_value = StackHashCounter(stk, 0);
+=>   17:     unsigned long  data_hash_value =  DataHashCounter(stk, 0);
+     18: 
+     19: 
+
+# 2 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 3 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:16:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:17:02
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DAC64 в функции DataHashCounter() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 261. Попытка прочесть данные по адресу 0x0000014F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x1360 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DAC64 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: DataHashCounter() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (261):
+
+    259:     {
+    260:         hash_value *= 33;
+=>  261:         hash_value += *data_byte;
+    262:         data_byte++;
+    263:     }
+
+# 1 0x004DA40F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (17):
+
+     15: 
+     16:     unsigned long stack_hash_value = StackHashCounter(stk, 0);
+=>   17:     unsigned long  data_hash_value =  DataHashCounter(stk, 0);
+     18: 
+     19: 
+
+# 2 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 3 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:16:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:17:02
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA492 в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 30. Попытка прочесть данные по адресу 0x0000014F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x2960 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA492 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (30):
+
+     28: 
+     29: 
+=>   30:     if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     31:         (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     32: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:19:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:19:33
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA492 в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 30. Попытка прочесть данные по адресу 0x0000014F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x2960 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA492 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (30):
+
+     28: 
+     29: 
+=>   30:     if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     31:         (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     32: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:19:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:19:33
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA492 в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 30. Попытка прочесть данные по адресу 0x0000014F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3AD0 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA492 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (30):
+
+     28: 
+     29: 
+=>   30:     if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     31:         (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     32: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:21:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:21:24
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA492 в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 30. Попытка прочесть данные по адресу 0x0000014F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3AD0 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA492 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (30):
+
+     28: 
+     29: 
+=>   30:     if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     31:         (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     32: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:21:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:21:24
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA492 в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 30. Попытка прочесть данные по адресу 0xCF2D079F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x27CC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA492 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (30):
+
+     28: 
+     29: 
+=>   30:     if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     31:         (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     32: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:21:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:22:31
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA492 в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 30. Попытка прочесть данные по адресу 0xCF2D079F в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x27CC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA492 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (30):
+
+     28: 
+     29: 
+=>   30:     if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     31:         (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     32: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:21:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:22:31
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA879 в функции StackDumpFunction() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 116. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x13DC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA879 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackDumpFunction() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (116):
+
+    114:     {
+    115:         printf("    left_data_canary   = ");
+=>  116:         printf(ELEM_T_SPECIFIER, *((*stk).data - 1));
+    117:         printf(" (ALIVE)\n");
+    118:     }
+
+# 1 0x004DA62E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (58):
+
+     56: 
+     57:     if ((*stk).err_code && (*stk).status && !dumped)
+=>   58:         StackDump(stk, stk_name);
+     59: 
+     60:     return 0;
+
+# 2 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 3 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:24:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:24:48
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA879 в функции StackDumpFunction() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 116. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x13DC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA879 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackDumpFunction() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (116):
+
+    114:     {
+    115:         printf("    left_data_canary   = ");
+=>  116:         printf(ELEM_T_SPECIFIER, *((*stk).data - 1));
+    117:         printf(" (ALIVE)\n");
+    118:     }
+
+# 1 0x004DA62E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (58):
+
+     56: 
+     57:     if ((*stk).err_code && (*stk).status && !dumped)
+=>   58:         StackDump(stk, stk_name);
+     59: 
+     60:     return 0;
+
+# 2 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 3 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:24:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:24:48
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA49F в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 31. Попытка прочесть данные по адресу 0x00000D0E в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x4690 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA49F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (31):
+
+     29:     if(!((*stk).err_code & NULL_POINTER_ERROR))
+     30:     {
+=>   31:         if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     32:             (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     33: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:30:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:31:24
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA49F в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 31. Попытка прочесть данные по адресу 0x00000D0E в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x4690 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA49F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (31):
+
+     29:     if(!((*stk).err_code & NULL_POINTER_ERROR))
+     30:     {
+=>   31:         if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     32:             (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     33: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:30:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:31:25
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA49F в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 31. Попытка прочесть данные по адресу 0xB4401A7E в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3808 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA49F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (31):
+
+     29:     if(!((*stk).err_code & NULL_POINTER_ERROR))
+     30:     {
+=>   31:         if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     32:             (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     33: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:30:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:31:45
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DA49F в функции StackVerification() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 31. Попытка прочесть данные по адресу 0xB4401A7E в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3808 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DA49F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackVerification() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (31):
+
+     29:     if(!((*stk).err_code & NULL_POINTER_ERROR))
+     30:     {
+=>   31:         if (*((*stk).data - 1)  !=  LEFT_DATA_CANARY_CONST && !((*stk).err_code & LEFT_DATA_CANARY_DEAD_ERROR))
+     32:             (*stk).err_code += LEFT_DATA_CANARY_DEAD_ERROR;
+     33: 
+
+# 1 0x004AE6F9 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (18):
+
+     16:     }
+     17: 
+=>   18:     StackVerificator(stk);
+     19: 
+     20:     if ((*stk).status == DEAD)
+
+# 2 0x0045747E in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 10; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 14:30:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 14:31:45
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AE70F в функции StackPush() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 43. Попытка записать данные по адресу 0xFFFFFFF4 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x1C28 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AE70F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (43):
+
+     41:         StackRealloc(stk);
+     42: 
+=>   43:     *((*stk).data + (*stk).data_size) = value;
+     44: 
+     45:     (*stk).data_size += 1;
+
+# 1 0x0045746A in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 5; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 20:30:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 20:31:22
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AE70F в функции StackPush() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 43. Попытка записать данные по адресу 0xFFFFFFF4 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x1C28 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AE70F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (43):
+
+     41:         StackRealloc(stk);
+     42: 
+=>   43:     *((*stk).data + (*stk).data_size) = value;
+     44: 
+     45:     (*stk).data_size += 1;
+
+# 1 0x0045746A in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 5; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 20:30:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 20:31:22
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AE71C в функции StackPush() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 43. Попытка записать данные по адресу 0xFFFFFFF4 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x500 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AE71C in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (43):
+
+     41:         StackRealloc(stk);
+     42: 
+=>   43:     *((*stk).data + (*stk).data_size) = value;
+     44: 
+     45:     (*stk).data_size += 1;
+
+# 1 0x0045746A in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 5; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 20:30:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 20:34:17
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004AE71C в функции StackPush() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp на строке 43. Попытка записать данные по адресу 0xFFFFFFF4 в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x500 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004AE71C in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (43):
+
+     41:         StackRealloc(stk);
+     42: 
+=>   43:     *((*stk).data + (*stk).data_size) = value;
+     44: 
+     45:     (*stk).data_size += 1;
+
+# 1 0x0045746A in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 5; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 20:30:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 20:34:17
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DAA8F в функции DataHashCounter() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 279. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x254C (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DAA8F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: DataHashCounter() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (279):
+
+    277:     {
+    278:         hash_value *= 33;
+=>  279:         hash_value += *data_byte;
+    280:         data_byte++;
+    281:     }
+
+# 1 0x004AE750 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (50):
+
+     48: 
+     49:     StackHashCounter(stk, 1);
+=>   50:      DataHashCounter(stk, 1);
+     51: 
+     52:     StackVerificator(stk);
+
+# 2 0x0045746A in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 5; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 20:30:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 20:35:50
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004DAA8F в функции DataHashCounter() в файле C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp на строке 279. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x254C (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004DAA8F in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: DataHashCounter() at C:/Program Files/CodeBlocks/CBProjects/Stack/verification_functions.cpp (279):
+
+    277:     {
+    278:         hash_value *= 33;
+=>  279:         hash_value += *data_byte;
+    280:         data_byte++;
+    281:     }
+
+# 1 0x004AE750 in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: StackPush() at C:/Program Files/CodeBlocks/CBProjects/Stack/pop_push_functions.cpp (50):
+
+     48: 
+     49:     StackHashCounter(stk, 1);
+=>   50:      DataHashCounter(stk, 1);
+     51: 
+     52:     StackVerificator(stk);
+
+# 2 0x0045746A in C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Stack/main.cpp (15):
+
+     13: 
+     14:     for (int index = 0; index < 15; index++)
+=>   15:         StackPush(&stk1, index);
+     16: 
+     17:     for (int index = 0; index < 5; index++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 20:30:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2022 20:35:50
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Stack\bin\Debug\Stack.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Stack
+
+--------------------------------------------------

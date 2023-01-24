@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1665424787 source:c:\program files\codeblocks\cbprojects\stack\main.cpp
+	"libraries.h"
+
+1665065772 c:\program files\codeblocks\cbprojects\stack\libraries.h
+	<stdio.h>
+	<stdlib.h>
+	<TXlib.h>
+	"config.h"
+	"stack_functions.h"
+
+1664915847 c:\program files\codeblocks\cbprojects\stack\config.h
+
+1664920365 source:c:\program files\codeblocks\cbprojects\stack\construct_functions.cpp
+	"libraries.h"
+
+1664920381 source:c:\program files\codeblocks\cbprojects\stack\verification_functions.cpp
+	"libraries.h"
+
+1664386519 source:c:\program files\codeblocks\cbprojects\stack\poison_functions.cpp
+	"libraries.h"
+
+1664920365 source:c:\program files\codeblocks\cbprojects\stack\pop_push_functions.cpp
+	"libraries.h"
+
+1665073600 c:\program files\codeblocks\cbprojects\stack\stack_functions.h
+
+1664920365 c:\program files\codeblocks\cbprojects\stack\pop_push_functions.cpp
+	"libraries.h"
+
+1664920365 c:\program files\codeblocks\cbprojects\stack\construct_functions.cpp
+	"libraries.h"
+
+1665424787 source:c:\codeblocksprojects\stack\main.cpp
+	"libraries.h"
+
+1665065772 c:\codeblocksprojects\stack\libraries.h
+	<stdio.h>
+	<stdlib.h>
+	<TXlib.h>
+	"config.h"
+	"stack_functions.h"
+
+1664915847 c:\codeblocksprojects\stack\config.h
+
+1665073600 c:\codeblocksprojects\stack\stack_functions.h
+
+1664386519 source:c:\codeblocksprojects\stack\poison_functions.cpp
+	"libraries.h"
+
+1664920381 source:c:\codeblocksprojects\stack\verification_functions.cpp
+	"libraries.h"
+
+1665685682 source:c:\codeblocksprojects\stack\construct_functions.cpp
+	"libraries.h"
+
+1665684975 source:c:\codeblocksprojects\stack\pop_push_functions.cpp
+	"libraries.h"
+
+1665685682 source:c:\cbprojects\stack\construct_functions.cpp
+	"libraries.h"
+
+1665065772 c:\cbprojects\stack\libraries.h
+	<stdio.h>
+	<stdlib.h>
+	<TXlib.h>
+	"config.h"
+	"stack_functions.h"
+
+1664915847 c:\cbprojects\stack\config.h
+
+1665073600 c:\cbprojects\stack\stack_functions.h
+
+1665424787 source:c:\cbprojects\stack\main.cpp
+	"libraries.h"
+
+1664386519 source:c:\cbprojects\stack\poison_functions.cpp
+	"libraries.h"
+
+1665684975 source:c:\cbprojects\stack\pop_push_functions.cpp
+	"libraries.h"
+
+1664920381 source:c:\cbprojects\stack\verification_functions.cpp
+	"libraries.h"
+
